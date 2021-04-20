@@ -1,0 +1,12 @@
+<h1>Welcome</h1>
+<div class="container">
+    <p>welcome {{name}}</p>
+    Click <a routerLink="/todos">here</a> to see list
+</div>
+<div class="container">
+    Click here now!!
+    <button (click)="getWelcomeWithPath()" class="btn btn-success">Welcome</button>
+</div>
+<div class="container" *ngIf = "msgfrmService">
+   <h2>{{msgfrmService}}</h2>
+</div>
