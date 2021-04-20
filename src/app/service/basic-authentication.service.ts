@@ -2,6 +2,7 @@ import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { HelloWorldBean } from './data/welcome-data.service';
 import {map} from 'rxjs/operators';
+import { API_URL } from '../app.constants';
 
 @Injectable({
   providedIn: 'root'
@@ -17,7 +18,7 @@ export class BasicAuthenticationService {
       })
 
     return this.http.get<AuthenticationBean>(
-      `http://localhost:8080/basicauth`,
+      `${API_URL}/basicauth`,
       {headers}
       ).pipe(
         map(

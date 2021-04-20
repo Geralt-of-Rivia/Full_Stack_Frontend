@@ -30,7 +30,7 @@ export class WelcomeComponent implements OnInit {
     //console.log(this.service.executehelloworldbeanserviec());
   }
   handleSuccessfulResponce(response){
-    this.msgfrmService = response.msg;
+    this.msgfrmService = response.message;
     //console.log(response.msg);
   }
   handleErrorResponse(error){
