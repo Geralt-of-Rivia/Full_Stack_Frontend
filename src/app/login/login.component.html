@@ -3,7 +3,7 @@
     <div class="alert alert-warning" *ngIf='invalidLogin'>{{errorMessage}}</div>
     User Name : <input type="text" name="username" [(ngModel)]="username"><br>
     Password : <input type="password" name="passsword" [(ngModel)]="password"><br>
-    <button type="submit" (click)=handleLogin() class="btn btn-success">Login</button>
+    <button type="submit" (click)=handleBasicAuthLogin() class="btn btn-success">Login</button>
 </div>
 <!-- <div *ngIf = "logValid else elseBlock">Welcome User!!</div>
 <ng-template #elseBlock>Invalid Username or password</ng-template> -->
